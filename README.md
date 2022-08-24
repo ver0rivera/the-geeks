@@ -3,14 +3,14 @@
 ## Team members
 
 - Jorge Teodoro Dawn Rodriguez
-[![Mike-1.png](https://i.postimg.cc/vBn9DLdp/Mike-1.png)](https://avatars.githubusercontent.com/u/66585895?v=4)
+[![teo.png](https://i.postimg.cc/g0F4sJ2F/teo.png)](https://postimg.cc/759gYqzm)
 
 - Daniela Regina Perez Sauza
-[![Mike-2.png](https://i.postimg.cc/T3yPR2xs/Mike-2.png)](https://postimg.cc/YvH7RHhN)
+[![danny.png](https://i.postimg.cc/xCsKwTnd/danny.png)](https://postimg.cc/34v4phyM)
 
 - Veronica Marilyn Rivera Manzanero
-[![Mike.png](https://i.postimg.cc/sxNR8SMg/Mike.png)](https://postimg.cc/K3BV3176)
+[![vero.png](https://i.postimg.cc/RFbHPsL6/vero.png)](https://postimg.cc/34mNNZ6Y)
 
 - Emiliano Valencia Guzman
-[![Mike-3.png](https://i.postimg.cc/bJwWhrcD/Mike-3.png)](https://postimg.cc/mcK83brB)
+[![emi.png](https://i.postimg.cc/G2N4PBbv/emi.png)](https://postimg.cc/R67C4Z60)
 
