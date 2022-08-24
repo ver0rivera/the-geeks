@@ -3,7 +3,7 @@
 ## Team members
 
 - Jorge Teodoro Dawn Rodriguez
-[![Mike-1.png](https://i.postimg.cc/vBn9DLdp/Mike-1.png)](https://postimg.cc/G8c95DtQ)
+[![Mike-1.png](https://i.postimg.cc/vBn9DLdp/Mike-1.png)](https://avatars.githubusercontent.com/u/66585895?v=4)
 
 - Daniela Regina Perez Sauza
 [![Mike-2.png](https://i.postimg.cc/T3yPR2xs/Mike-2.png)](https://postimg.cc/YvH7RHhN)
