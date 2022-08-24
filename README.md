@@ -1,6 +1,6 @@
 # the-geeks
 
-## Integrantes
+## Team members
 
 - Jorge Teodoro Dawn Rodriguez
 - Daniela Regina Perez Sauza
