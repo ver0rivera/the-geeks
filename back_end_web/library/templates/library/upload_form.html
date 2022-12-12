@@ -1,0 +1,38 @@
+{% extends "authRequiredBase.html" %}
+
+{% load static %}
+
+{% block cssfiles %} 
+    <link rel="stylesheet" href="{% static 'css/blackPage.css' %}">
+    <link rel="stylesheet" href="{% static 'css/register_form.css' %}">
+{% endblock %}
+
+{% block title %}Comentarios{% endblock %}
+
+{% block content_auth %}
+    <div class="grid-layout-CC">
+        <div class="item1-CC">
+            <img id="icono" alt="Image 1" style="width: 80px;" src="{% static 'iconos/' %}microwave.png" align="left" />
+    
+            {% include "navbar.html" %}
+        </div>
+    
+        <div class="item2-CC">
+            <p class="titulo">Biblioteca <m style="color:#4FCFFF;">Virtual</m>
+            </p>
+        </div>
+    
+        <div class="item3-CC">
+            <div class="texto">
+                <p style="text-align: center;">Muchas gracias por tu apoyo!</p>
+            </div>
+    
+            <form class="register_form" method="POST" action="" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Submit" class="button">
+            </form>
+        </div>
+    </div>
+    
+{% endblock %}

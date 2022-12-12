@@ -1,0 +1,53 @@
+body {
+    background-color: #000000;
+}
+
+
+.upload-link {
+    width: 120px;
+    height: 40px;
+    vertical-align: top;
+    background-color: #00e5ff;
+    text-align: top;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+.upload-link:hover {
+    background-color: #00e5ff;
+    box-shadow: 0 0 10px #00e5ff;
+}
+
+
+.alredy-account-fosfo{
+    font-size: 25px;
+    color: rgb(0, 217, 255);
+}
+
+
+.alredy-account-fosfo a {
+    width: 100%;
+    padding: 50px;
+    font-size: 30px;
+    color: rgb(0, 217, 255);
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.alredy-account-fosfo:hover {
+    text-shadow: rgb(0,
+            217,
+            255) 0 0 5px;
+}
+
+
+.orange {
+    
+    color: #ff8c00;
+}
+
+.orange:hover {
+    text-shadow: #ff8c00 0 0 5px;
+}

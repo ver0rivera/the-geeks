@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block cssfiles %} 
+    <link rel="stylesheet" href="{% static 'css/authentication.css' %}">
+    <link rel="stylesheet" href="{% static 'css/blackPage.css' %}">
+{% endblock %}
+
+{% block title %}My amazing blog{% endblock %}
+
+{% block content %}
+
+    {% if user.is_authenticated %}
+        {% block content_auth %}
+            Hola {{ user.username }}!
+            <p><a  href="{% url 'logout' %}">Log Out</a></p>
+        {% endblock %}		
+    {% else %}
+    <div class="grid-layout-I fixed_center_not_logued">
+
+            <div class="item1-CC">
+                <img id="icono" alt="Image 1" style="width: 80px;" src="{% static 'iconos/' %}microwave.png" align="left" />
+                {% include "navbar.html" %}
+            </div>
+            
+            <div class="item2-CC">
+                <p class="titulo">You are not logged in</p>
+                <a class="alredy-account-fosfo" href="{% url 'login' %}">Log In here!!</a>
+                <a class="alredy-account-fosfo orange" href="{% url 'login' %}">Register here!!</a>
+            </div>
+
+    </div>
+    {% endif %}
+    
+{% endblock %}

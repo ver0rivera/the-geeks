@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block cssfiles %} 
+    <link rel="stylesheet" href="{% static 'css/blackPage.css' %}">
+{% endblock %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+
+<div class="grid-layout-CC">
+    <div class="item1-CC">
+        <img id="icono" alt="Image 1" style="width: 80px;" src="{% static 'iconos/' %}microwave.png" align="left" />
+
+        {% include "navbar.html" %}
+    </div>
+
+    <div class="item2-CC">
+        <p class="titulo">Biblioteca <m style="color:#4FCFFF;">Virtual</m>
+        </p>
+    </div>
+
+    <div class="item3-CC">
+        <div class="texto">
+            <p style="text-align: center; color: #28E0A6; font-size: 50px;">Contacto</p>
+            <p style="text-align: center; font-size: 20px;">Como equipo nos comprometemos a resolver sus dudas o
+                inquietudes vía "WhatsApp", con el fin de manejar una atención eficaz y personalizada</p>
+        </div>
+
+        <div class="texto-general">
+            <table id=tablaContactos style="position:relative;left: 35%;">
+                <tr>
+                    <td>
+                        <img style="width: 80px;" src="{% static 'iconos/' %}telefono.png">
+                    </td>
+                    <td class="infoContacto">
+                        <p class="nombres">Teodoro Dawn:</p>
+                        <p>Lunes a Viernes (9:00 am - 12:00 pm)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img style="width: 80px;" src="{% static 'iconos/' %}telefono.png">
+                    </td>
+                    <td class="infoContacto">
+                        <p class="nombres">Emiliano Valencia:</p>
+                        <p>Lunes a Viernes (12:00 pm - 3:00 pm)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img style="width: 80px;" src="{% static 'iconos/' %}telefono.png">
+                    </td>
+                    <td class="infoContacto">
+                        <p class="nombres">Verónica Rivera:</p>
+                        <p>Lunes a Viernes (3:00 pm - 6:00 pm)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img style="width: 80px;" src="{% static 'iconos/' %}telefono.png">
+                    </td>
+                    <td class="infoContacto">
+                        <p class="nombres">Daniela Pérez:</p>
+                        <p>Sábado (9:00 am - 4:00 pm)</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

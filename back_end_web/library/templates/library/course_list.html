@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block cssfiles %} 
+    <link rel="stylesheet" href="{% static 'css/estilosGeneral.css' %}">
+{% endblock %}
+
+{% block title %}Semesters{% endblock %}
+
+{% block content %}
+
+    <!-- <form method="get">
+        <input name="q" type="text" placeholder="Search...">
+    </form> -->
+
+
+    <div class="grid-layout-M">
+    
+        <div class="item1-M">
+            <img id="icono" alt="Image 1" src="{% static 'iconos/' %}CupWhite.png" align="left" />
+    
+            {% include "navbar.html" %}
+        </div>
+    
+        <div class="item2-M">
+            <p id="titulo" align="center"> Materias</p>
+            <p id="subtitulo" align="center"> Semestre {{ course.semester.semester_number }}</p>
+    
+            <div class="grid-main-M">
+
+                {% for course in object_list %}
+                     <div class="materia{{ forloop.counter }}"><a href="{{ course.get_absolute_url }}" class="link-azul">{{ course.name }}</a></div>
+                {% endfor %}
+
+            </div>
+        </div>
+    
+        <!--<div class="item3-M">
+            <p class="menuBotNegro">&lt; <a href="mockup2.html">Materias</a> | | <a href="mockup5.html">Ejercicios</a> | |
+                <a href="mockup6.html">Recursos</a> &gt;</p>
+            </p>
+        </div>-->
+    </div>
+
+{% endblock %}

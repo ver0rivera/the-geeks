@@ -1,0 +1,111 @@
+.navbar a {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  color: #28E0A6
+}
+
+.dropdown {
+  /*ejercicios, materias, semestres, unidad, unidades, unidadRecursos*/
+  float: right;
+  overflow: hidden;
+}
+
+.grid-layout-I {
+    display: grid;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+    gap: 10px;
+    background-color: #000000; /*FONDO DEL GRID*/
+    padding: 10px;
+    grid-template-rows: 70px 50px  550;
+}
+
+.dropdown .dropbtn {
+  font-size: 25px;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.item1-CC {
+  grid-area: header;
+}
+
+.item2-CC {
+  grid-area: main;
+}
+
+.titulo {
+  margin: 0;
+  font-size: 50px;
+  color:white;
+}
+
+
+
+
+p {
+    line-height: 1.4;
+  }
+  
+  a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+  
+  a:link {
+    color: rgb(255, 255, 255);
+  }
+  
+  a:visited {
+    color: rgb(3, 121, 105);
+  }
+  
+  a:focus, a:hover {
+    border-bottom: 1px solid;
+  }
+  
+  a:active {
+    color: rgb(0, 163, 181);
+  }
+

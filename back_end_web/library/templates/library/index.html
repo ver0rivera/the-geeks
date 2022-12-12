@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+
+{% block cssfiles %} 
+<link rel="stylesheet" href="{% static 'css/sideBar.css' %}" />
+<link rel="stylesheet" href="{% static 'css/mediaQueryIndex.css' %}" />
+<link rel="stylesheet" href="{% static 'css/blackPage.css' %}">
+{% endblock %}
+
+
+{% block jsfiles %}
+{% endblock %}
+
+
+{% block title %}Biblioteca Ing. Software{% endblock %}
+
+{% block content %}
+
+
+
+<div class="grid-layout-I">
+
+    <div class="item0-I"> 
+        <div class="barra-main-I">
+        <nav class="main-menu">
+          <ul id="listaPins">
+          </ul>
+      </nav>
+    </div>
+      </div>
+    
+        <div class="item1-I">
+            <img id="icono" alt="Image 1" src="{% static 'iconos/microwave.png' %}" align="left" />
+            
+            {% include "navbar.html" %}
+        </div>
+        
+        <div class="item2-I">
+            <p class="titulo">Biblioteca <m style="color:#4FCFFF;">Virtual</m>
+            </p>
+            {% if user.is_authenticated %}
+                <p>Bievenidx {{ user.username }}!</p>                
+            {% endif %}
+        </div>
+    
+        <div class="item3-I">
+            <p id="subtitulo" align="center">Licenciatura en ingeniería de Software</p>
+    
+            <div class="grid-main-I">
+                <div class="index1">
+                    <p><a href="{% url 'semester_list' %}" class="link-negro">Semestres</a></p>
+                </div>
+                <div class="index2">
+                    <p><a href="{% url 'comment_form' %}" class="link-negro">Comentarios</a></p>
+                </div>
+                <div class="inde3">
+                    <p><a href="{% url 'contact' %}" class="link-negro">Contacto</a></p>
+                </div>
+                <div class="inde4">
+                    <p><a href="{% url 'upload' %}" class="upload-link link-negro">🤙🏼Sube un material !!</a></p>
+                </div>
+            </div>
+
+            <div id="fun-fact"></div>
+
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block jsfilesend %}
+    <script language="javascript" type="module" src="{% static 'js/Lista.js' %}"></script>
+    <script language="javascript" type="module" src="{% static 'js/ajax.js' %}"></script>
+{% endblock %}

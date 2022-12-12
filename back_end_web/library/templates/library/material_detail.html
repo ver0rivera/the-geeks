@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+
+
+{% block cssfiles %}
+<link rel="stylesheet" href="{% static 'css/sideBar.css' %}" />
+<link rel="stylesheet" href="{% static 'css/botonFlotante.css' %}" />
+{% endblock %}
+
+{% block jsfiles %}
+    <script src="https://kit.fontawesome.com/b9de68eef5.js" crossorigin="anonymous"></script> 
+{% endblock %}
+
+{% block title %} {{ course.title }} {% endblock %}
+
+{% block content %}
+
+
+        <div class="container">
+            <div class="buttonFavorito">
+            <div class="container">
+                <div class="buttonTextoFavorito"></div>
+            </div>
+            </div>
+        </div>
+
+        <div class="grid-layout-U">
+
+            <div class="item1-U">
+              <img id="icono" alt="Image 1" src="{% static 'iconos\CupWhite.png' %}" align="left"/>
+        
+              {% include "navbar.html" %}
+            </div>
+        
+            <div class="item2-U">
+              <p id="titulo" align="center">{{ course.title }} </p>
+              <p id="subtitulo"> {{ material.title }}</p> 
+        
+              <div class="contenido-U">
+                <p>{{ material.description }}</p>
+              </div>
+        
+            </div>
+        
+            <div class="item3-U">
+                    <div class="grid-bottom-U">
+        
+                        <div class="bot1">
+                            <button class="adobe-pdf-download">
+                                <table>
+                                    <tr>
+                                    <td><img src="{% static 'iconos\pdf1.png' %}"></td>
+                                    <td><p><a href="resources">Recursos</a></p></td>
+                                    </tr>
+                                </table>
+                            </button>
+                        </div>
+        
+                        <div class="bot2">
+                            <button class="ejercicios-pdf-download">
+                                <table>
+                                    <tr>
+                                    <td><img src="{% static 'iconos\ejercicios1.png' %}"></td>
+                                    <td><p><a href="exercises">Ejercicios</a></p></td>
+                                    </tr>
+                                </table>
+                            </button>
+        
+                        </div>
+                    </div>
+            </div>  
+          </div>
+
+{% endblock %}
+
+{% block jsfilesend %}
+    <script language="javascript" type="module" src="{% static 'js/cookiesMaterialFav.js' %}"></script>
+{% endblock %}
+

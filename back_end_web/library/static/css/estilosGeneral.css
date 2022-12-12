@@ -1,0 +1,784 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    /* margin-top: 0%; solo en comentariosYcontacto e index*/
+}
+
+/*!LINKS*/
+
+.menuBotNegro{ /*materias, unidades, unidadRecursos, ejercicios*/
+    font-size: 20px;
+    position: relative;
+    bottom: 0;
+}
+
+.menuBotNegro>a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menuBotNegro>a:hover{
+    color: rgb(40, 224, 166);
+}
+
+.link-azul{ /*materias, semestres, unidades, unidadRecursos*/
+    border-radius: 10px;
+    background-color: #4FCFFF;
+    height: 70px;
+    width: 100px; /*era 150*/
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;;
+    font-size: 18px; /*era 25*/
+    transition-duration: 0.4s;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.link-azul:hover{
+    background-color: #1a7698;
+    color: white;
+}
+  
+.link-verde{ /*materias, semestres, unidades, unidadRecursos*/
+    border-radius: 10px;
+    background-color: #28E0A6;
+    height: 30px;
+    width: 100px; /*era 150*/
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px; /*era 25*/
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+  
+.link-verde:hover {
+    background-color: #18976f;
+    color: white;
+}
+
+.link-negro{ /*era link-especial en index*/
+    border-radius: 10px;
+    height: 20px;
+    background-color: #000000;
+    padding: 50px; /*no se porque pero aquí es para mover el tamaño de las cajas negras del main*/
+    border: 2px solid #28E0A6;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 120px;
+}
+  
+.link-negro:hover {
+    background-color: #28E0A6;
+    color: black;
+}
+
+.button { /*comentarios*/
+    background-color: black;
+    border: medium solid #28E0A6;
+    border-radius: 8px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #28E0A6;
+    color: black;
+}
+
+/*!TEXTO RELATED*/
+#titulo{ /*comentariosYcontacto, ejercicios, index, semestres*/
+    margin: 0;
+}
+
+#titulo-mayor{ /*materias, unidad, unidades, unidadRecursos*/
+    margin: 5px;
+}
+
+#subtitulo{ /*comentariosYcontacto, index, materias, unidad, unidades, unidadRecursos*/
+    margin: 0;
+}
+
+#icono{ /*comentariosYcontacto, ejercicios, index, materias, semestres, unidad, unidades, unidadRecursos*/
+    width: 80px;
+    height: 80px;
+}
+
+/*!POR CLASE*/
+/**solo comentariosYcontacto*/
+.texto-formulario{
+    background-color: black;
+    color:#FFFFFF;
+    border: medium solid #28E0A6;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cuadros {
+    background-color: #000000;
+    border: medium solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.texto-general{
+    color:#FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#tablaContactos{
+    border-spacing: 40px;
+}
+
+.nombres{
+    color:#4FCFFF; 
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.infoContacto > p{
+    margin: 0;
+}
+
+.titulo{
+    margin:0;
+    font-size: 50px;
+}
+
+.texto > p{
+    margin: 10px;
+    font-size: 25px;
+}
+/**solo comentariosYcontacto*/
+
+/**solo ejercicios*/
+.ejercicioTabla td{
+    border: 1px solid black;
+}
+
+.ejercicioBoton {
+    padding: 0;
+    border: 0;
+}
+/**solo ejercicios*/
+
+/**botones especiales para unidad*/
+.adobe-download-button-container {
+    text-align: center;
+}
+
+.adobe-pdf-download {
+    border: 2px solid #de4533;
+    background: transparent;
+    color: #de4533;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 0px 20px 0px 20px;
+    transition: background 0.5s, color 0.5s;
+}
+
+.adobe-pdf-download a {
+    text-decoration: none;
+    color: #de4533;
+    transition: background 0.5s, color 0.5s;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.adobe-pdf-download a:hover {
+    color: white;
+    transition: background 0.5s, color 0.5s;
+}
+
+.adobe-pdf-download:hover a {
+    color: white;
+    transition: background 0.5s, color 0.5s;
+}
+
+.adobe-pdf-download:hover {
+    background: #de4533;
+    color: white;
+    transition: background 0.5s, color 0.5s;
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+.adobe-pdf-download img {
+    margin: 0px 10px 0px 0px;
+    padding: 0px;
+    height: 70px;
+}
+
+.ejercicios-download-button-container {
+    text-align: center;
+}
+
+.ejercicios-pdf-download {
+    border: 2px solid #4FCFFF;
+    background: transparent;
+    color: #4FCFFF;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 0px 20px 0px 20px;
+    transition: background 0.5s, color 0.5s;
+}
+
+.ejercicios-pdf-download a {
+    text-decoration: none;
+    color: #4FCFFF;
+    transition: background 0.5s, color 0.5s;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.ejercicios-pdf-download a:hover {
+    color: white;
+    transition: background 0.5s, color 0.5s;
+}
+
+.ejercicios-pdf-download:hover a {
+    color: white;
+    transition: background 0.5s, color 0.5s;
+}
+
+.ejercicios-pdf-download:hover {
+    background: #4FCFFF;
+    color: white;
+    transition: background 0.5s, color 0.5s;
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+.ejercicios-pdf-download img {
+    margin: 0px 10px 0px 0px;
+    padding: 0px;
+    height: 70px;
+}
+
+@keyframes shake {
+    10%,
+    90% { transform: translate3d(-1px, 0, 0); }
+  
+    20%,
+    80% { transform: translate3d(2px, 0, 0); }
+  
+    30%,
+    50%,
+    70% { transform: translate3d(-4px, 0, 0); }
+  
+    40%,
+    60% { transform: translate3d(4px, 0, 0); }
+}
+/**botones especiales para unidad*/
+
+/*!NAVBAR y DROPDOWNS*/
+.navbar { /*comentariosYcontacto, ejercicios, index, materias, semestres, unidad, unidades, unidadRecursos*/
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    margin-top: 0%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+}
+
+.navbar a { 
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: #28E0A6
+}
+
+.dropdown { /*ejercicios, materias, semestres, unidad, unidades, unidadRecursos*/
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 25px;  
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*!GRIDS*/
+/**COMENTARIOS Y CONTACTOS*/
+.item1-CC { grid-area: header; }
+.item2-CC { grid-area: main; }
+.item3-CC { grid-area: footer; }   
+
+.grid-layout-CC {
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+    gap: 10px;
+    background-color: #000000; /*FONDO DEL GRID*/
+    padding: 0px 10px 0px 10px;
+}
+  
+.grid-layout-CC > div {
+    background-color: #000000;
+    padding: 0px 10px 0px 10px;
+    font-size: 25px;
+    color: white;
+    margin: 0;
+}
+
+.grid-main-CC {
+    display: grid;
+    grid-template-areas:
+        'semestre1'
+        'semestre2'      
+        'semestre3';
+    justify-content: center;
+    grid-template-columns: 700px; /*Make the grid smaller than the container*/
+    grid-template-rows: 150px 150px 150px;
+    gap: 20px;
+    background-color: #000000; /*FONDO DEL GRID*/
+    padding: 0px;
+}
+
+.grid-main-CC > div {
+    text-align: center;
+    padding: 5px 5px;
+    font-size: 20px;
+    border-radius:5%;
+    border: 2px;
+}
+/**COMENTARIOS Y CONTACTOS*/
+
+/**EJERCICIOS*/
+.item1-E { grid-area: header; }
+.item2-E { grid-area: main; }
+.item3-E { grid-area: footer; }
+
+.ejercicio1 { grid-area: ejercicio1;}
+.ejercicio2 { grid-area: ejercicio2;}
+.ejercicio3 { grid-area: ejercicio3;}
+.ejercicio4 { grid-area: ejercicio4;}
+.ejercicio5 { grid-area: ejercicio5;}
+.ejercicio6 { grid-area: ejercicio6;}
+.ejercicio7 { grid-area: ejercicio7;}
+.ejercicio8 { grid-area: ejercicio8;}
+.ejercicio9 { grid-area: ejercicio9;}
+
+.grid-layout-E {
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+    gap: 10px;
+    background-color: #ffffff; /*FONDO DEL GRID*/
+    padding: 10px;
+    grid-template-rows: 70px;
+}
+
+.grid-layout-E > div {
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 40px;
+}
+
+.grid-main-E {
+    display: grid;
+    grid-template-areas:
+        'ejercicio1 ejercicio2 ejercicio3'
+        'ejercicio4 ejercicio5 ejercicio6'
+        'ejercicio7 ejercicio8 ejercicio9';
+    justify-content: center;
+
+    grid-template-rows: 80px 80px 80px;
+    gap: 37px;
+    padding: 10px;
+}
+
+.grid-main-E > div {
+    text-align: center;
+    padding: 5px 5px;
+    font-size: 20px;
+    border-radius:5%;
+    border: 2px;
+}
+/**EJERCICIOS*/
+
+/**INDEX*/
+.item1-I { grid-area: header; }
+.item0-I {grid-area: sideBar;}
+.item2-I { grid-area: main; }
+.item3-I { grid-area: footer; }   
+
+.index1 { grid-area: index1;}
+.index2 { grid-area: index2;}
+.index3 { grid-area: index3;}
+
+.grid-layout-I {
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'main main'
+        'sideBar footer';
+    gap: 10px;
+    background-color: #000000; 
+    padding: 10px;
+    grid-template-rows: 70px 50px  550;
+    grid-template-columns: 0;
+}
+
+
+.grid-layout-I > div {
+    background-color: #000000;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 40px;
+    color: white;
+}
+
+.grid-main-I {
+    display: grid;
+    grid-template-areas:
+        'index1'
+        'index2'      
+        'index3';
+    justify-content: center;
+    grid-template-columns: 700px; /*Make the grid smaller than the container*/
+    grid-template-rows: 150px 150px 150px;
+    gap: 20px;
+    background-color: #000000; /*FONDO DEL GRID*/
+    padding: 0px;
+}
+
+
+.grid-main-I > div {
+    text-align: center;
+    padding: 5px 5px;
+    font-size: 20px;
+    border-radius:5%;
+    border: 2px;
+}
+/**INDEX*/
+
+/**MATERIAS*/
+.item0-M { grid-area: sideBar; }
+.item1-M { grid-area: header; }
+.item2-M { grid-area: main; }
+.item3-M { grid-area: footer; background-color: #18976f;}
+
+.materia1 { grid-area: materia1; }
+.materia2 { grid-area: materia2; }
+.materia3 { grid-area: materia3; }
+.materia4 { grid-area: materia4; }
+.materia5 { grid-area: materia5; }
+
+.grid-layout-M {
+    display: grid;
+    grid-template-areas:
+        'header header '
+        'sideBar main'
+        'footer footer';
+    gap: 10px;
+    background-color: #000000; /*FONDO DEL GRID*/
+    padding: 10px;
+    grid-template-rows: 70px 550px  30px;
+    grid-template-columns: 0;
+}
+
+.grid-layout-M > div {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.grid-main-M {
+    display: grid;
+    grid-template-areas:
+        'materia1 materia2 '
+        'materia3 materia4'
+        'materia5 materia6';
+    justify-content: center;
+    grid-template-columns: 150px 150px; /*Make the grid smaller than the container*/
+    gap: 40px;
+    background-color: #000000; /*FONDO DEL GRID*/
+    padding: 10px;
+    
+}
+
+.grid-main-M > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    border-radius:5%;
+    border: 2px;
+}
+/**MATERIAS*/
+
+/**SEMESTRES*/
+.item0-S { grid-area: sideBar;}
+.item1-S { grid-area: header; }
+.item2-S { grid-area: main; }
+.item3-S { grid-area: footer; }
+
+.semestre1 { grid-area: semestre1;}
+.semestre2 { grid-area: semestre2;}
+.semestre3 { grid-area: semestre3;}
+.semestre4 { grid-area: semestre4;}
+.semestre5 { grid-area: semestre5;}
+.semestre6 { grid-area: semestre6;}
+.semestre7 { grid-area: semestre7;}
+.semestre8 { grid-area: semestre8;}
+.semestre9 { grid-area: semestre9;}
+
+
+.grid-layout-S {
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'sideBar main'
+        'footer footer';
+    gap: 10px;
+    background-color: #000000; /*FONDO DEL GRID*/
+    padding: 10px;
+    grid-template-rows: 70px 620px  50px;
+    grid-template-columns: 0;
+}
+
+.grid-layout-S > div {
+    background-color: #000000;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 40px;
+    color: white;
+}
+
+.grid-main-S {
+    display: grid;
+    grid-template-areas:
+        'semestre1 semestre2'
+        'semestre3 semestre4'
+        'semestre5 semestre6'
+        'semestre7 semestre8'
+        'semestre9 semestre9';
+    justify-content: center;
+    grid-template-columns: 250px 250px; /*Make the grid smaller than the container*/
+    grid-template-rows: 80px 80px 80px 80px 70px;
+    gap: 37px;
+    background-color: #000000; /*FONDO DEL GRID*/
+    padding: 10px;
+}
+
+.grid-main-S > div {
+text-align: center;
+padding: 5px 5px;
+font-size: 20px;
+border-radius:5%;
+border: 2px;
+}
+/**SEMESTRES*/
+
+/**UNIDAD*/
+.item1-U { grid-area: header; }
+.item2-U { grid-area: main; }
+.item3-U { grid-area: footer; }
+
+.grid-layout-U {
+    display: grid;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+    gap: 10px;
+    background-color: #ffffff; /*FONDO DEL GRID*/
+    padding: 10px;
+    grid-template-rows: 70px;
+}
+
+.grid-layout-U > div {
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 40px;
+}
+
+.item2-U{
+    background-color: rgb(245, 245, 245);
+    grid-template-columns: 20000000px;
+}
+
+.item3-U{
+    background-color: rgb(245,245,245);
+}
+
+.contenido-U{
+    font-size: 25px;
+    text-align: left;
+}
+    
+.grid-bottom-U{
+    display: grid;
+    grid-template-areas:
+        'bot1 bot2';
+    gap: 10px;
+    background-color: rgb(245, 245, 245); /*FONDO DEL GRID*/
+    padding: 10px;
+}
+/**UNIDAD*/
+
+/**UNIDADES*/
+.item0-US { grid-area: sideBar;}
+.item1-US { grid-area: header; }
+.item2-US { grid-area: main; }
+.item3-US { grid-area: footer; background-color: #18976f;}
+
+.asignatura1 { grid-area: asignatura1; }
+.asignatura2 { grid-area: asignatura2; }
+.asignatura3 { grid-area: asignatura3; }
+.asignatura4 { grid-area: asignatura4; }
+.asignatura5 { grid-area: asignatura5; }
+
+.grid-layout-US {
+    display: grid;
+    grid-template-areas:
+        'header header '
+        'sideBar main'
+        'footer footer';
+    gap: 10px;
+    background-color: #000000; /*FONDO DEL GRID*/
+    padding: 10px;
+    grid-template-rows: 70px 600px  30px;
+    grid-template-columns: 0;
+    color: #ffffff;
+}
+
+.grid-layout-US > div {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 40px;
+}
+
+.grid-main-US > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+  border-radius:5%;
+  border: 2px;
+}
+/**UNIDADES*/
+
+/**UNIDAD RECURSOS*/
+.item0-UR { grid-area: sideBar;}
+.item1-UR { grid-area: header; }
+.item2-UR { grid-area: main; }
+.item3-UR { grid-area: footer;}
+
+.clase1 { grid-area: clase1; }
+.clase2 { grid-area: clase2; }
+
+.grid-layout-UR {
+    display: grid;
+    grid-template-areas:
+        'header header '
+        'sideBar main'
+        'footer footer';
+    gap: 10px;
+    background-color: #ffffff; /*FONDO DEL GRID*/
+    padding: 10px;
+    grid-template-rows: 70px 550px  70px;
+    grid-template-columns: 0;
+}
+
+.grid-layout-UR > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 40px;
+}
+
+.grid-main-UR {
+    display: grid;
+    grid-template-areas:
+        'clase1'
+        'clase2';
+    justify-content: center;
+    grid-template-columns: 250px; /*Make the grid smaller than the container*/
+    gap:30px;
+    background-color: #ffffff; /*FONDO DEL GRID*/
+    padding: 50px;
+}
+
+.grid-main-UR > div {
+text-align: center;
+padding: 20px 0;
+font-size: 20px;
+border-radius:5%;
+border: 2px;
+}
+/**UNIDAD RECURSOS*/

@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block cssfiles %}
+    <link rel="stylesheet" href="{% static 'css/blackPage.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sideBar.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/acordeon.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/search-course.css' %}">
+    <style>
+        .item2-US {
+            gap: 0;
+        }
+    </style>
+{% endblock %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<div class="grid-layout-US">
+
+    <div class="item1-US"> 
+        <img id="icono" alt="Image 1" src="{% static 'iconos\CupWhite.png' %}" align="left" />
+
+        {% include "navbar.html" %}
+    </div>
+
+    <div class="item2-US">
+        <p id="titulo" align="center"> {{course.name}}</p>
+        <br>
+        <p id="subtitulo" align="center"></p>
+
+
+        {% for x, y in links %}  
+            <button class="accordion">{{y}}</button>
+            <div class="panel">
+                <div class="p">
+                    {% for unit in units %}
+                        <p><a href= "{{ request.path }}unit/{{forloop.counter}}/{{ y }}">Unidad {{forloop.counter}}</a> </p>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <!--<div class="item3-US">
+        <p class="menuBotNegro">&lt; <a href="mockup2.html">Materias</a> | | <a href="mockup5.html">Ejercicios</a> | |
+            <a href="mockup6.html">Recursos</a> &gt;</p>
+        </p>
+    </div>-->
+
+    <div class="item0-S"> 
+        <div class="barra-main-I">
+        <nav class="main-menu">
+          <ul id="listaPins">
+          </ul>
+      </nav>
+    </div>
+      </div>
+
+{% endblock %}
+
+{% block jsfilesend %}
+    <script language="javascript" type="module" src="{% static 'js/Lista.js' %}"></script>
+    <script language="javascript" type="module" src="{% static 'js/Acordeon.js' %}"></script>
+{% endblock %}

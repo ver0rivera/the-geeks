@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block cssfiles %} 
+    <link rel="stylesheet" href="{% static 'css/blackPage.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sideBar.css' %}" />
+{% endblock %}
+
+{% block title %}Semesters{% endblock %}
+
+{% block content %}
+
+
+<div class="grid-layout-S">
+
+    <div class="item0-I"> 
+        <div class="barra-main-I">
+        <nav class="main-menu">
+          <ul id="listaPins">
+          </ul>
+      </nav>
+    </div>
+      </div>
+    
+    <div class="item1-S">
+        <img id="icono" alt="Image 1" src="{% static 'iconos/' %}CupWhite.png" align="left" />
+        
+            {% include "navbar.html" %}
+        </div>
+    
+        <div class="item2-S">
+            <p id="titulo" align="center"> Semestres</p>
+
+            <!-- <form method="get" align="center">
+                <input name="q" type="text" placeholder="Search...">
+            </form> -->
+    
+            <div class="grid-main-S">
+
+                {% for semester in object_list %}
+                <div class="semestre{{ semester.semester_number }}">
+                    <p><a class="link-azul" href="{% url 'course_list' semester_num=semester.semester_number %}">semestre {{ semester.semester_number }}</a></p>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    
+       
+        
+    </div>
+
+{% endblock %}

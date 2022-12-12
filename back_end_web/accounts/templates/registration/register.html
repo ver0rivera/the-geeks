@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block cssfiles %}
+    <link rel="stylesheet" href="{% static 'css/form.css' %}">
+    <link rel="stylesheet" href="{% static 'css/register_form.css' %}">
+{% endblock %}
+
+{% block title %}LOG IN{% endblock %}
+
+{% block content %}
+<div class="item1-CC">
+    <img id="icono" alt="Image 1" style="width: 80px;" src="{% static 'iconos/' %}microwave.png" align="left" />
+
+    {% include "navbar.html" %}
+</div>
+
+<div class="item2-CC">
+    <p class="tittle-login">Register
+    </p>
+
+</div>
+
+
+<form class="register_form" method="post">
+    {% csrf_token %}
+    {{ register_form.as_p }}
+    <button type="submit">register</button>
+</form>
+
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+        {% endfor %}
+</ul>
+{% endif %}
+
+<p class="text-center alredy-account">If you already have an account, <a href="{% url 'login' %}">login</a> instead.</p>
+
+<div>
+
+</div>
+
+
+{% endblock %}

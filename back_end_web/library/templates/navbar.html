@@ -1,0 +1,35 @@
+<div class="navbar">
+    <a href="{% url 'home' %}">Inicio</a>
+    <a href="{% url 'comment_form' %}">Comentarios</a>
+
+    {% if user.is_authenticated %}
+        <a href="{% url 'logout' %}">log-out</a>
+    {% else %}
+        <a href="{% url 'login' %}">log-in</a>
+        <a href="{% url 'register' %}">register</a>
+    {% endif %}
+
+    {% if 'materials' in request.path or 'resources' in request.path or 'exercises' in request.path %}
+    <div class="dropdown">
+        <button class="dropbtn">Otros
+        </button>
+        <div class="dropdown-content">
+            <a href="materials">Materias</a>
+            <a href="exercises">Ejercicios</a>
+            <a href="resources">Recursos</a>
+        </div>
+    </div>
+    {% endif %}
+    <a href="{% url 'contact' %}">Contacto</a>
+
+    <div class="search-box">
+        <button class="btn-search"><i class="fa fa-search"></i></button>
+        <form action="{% url 'course_search_results' %}" method="post">
+            <label for="search-course"></label>
+            <input class="input-search" type="text" name="search-course" id="search-course" placeholder="Search a course!">
+        </form>
+    </div>
+
+
+</div>
+
